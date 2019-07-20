@@ -25,7 +25,7 @@ function renderMovies(movies) {
 function movies() {
     var content = document.getElementById('content');
 
-    axios.get('/api/movies').then(function (response) {
+    axios.get('http://localhost:3000/api/movies').then(function (response) {
         content.innerHTML = renderMovies(response.data);
     });
 

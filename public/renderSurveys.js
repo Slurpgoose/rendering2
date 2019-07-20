@@ -51,7 +51,7 @@ function renderFields(fields) {
 function surveys() {
     var content = document.getElementById('content');
 
-    axios.get('/api/surveys').then(function (response) {
+    axios.get('http://localhost:3000/api/surveys').then(function (response) {
         content.innerHTML = renderSurveys(response.data);
     });
 

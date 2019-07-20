@@ -17,7 +17,7 @@ function renderPokerHand(pokerHand) {
 function pokerHand() {
     var content = document.getElementById('content');
 
-    axios.get('/api/poker').then(function (response) {
+    axios.get('http://localhost:3000/api/poker').then(function (response) {
         content.innerHTML = renderPokerHand(response.data);
     });
 

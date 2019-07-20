@@ -19,7 +19,7 @@ function renderStudents(students) {
 function students() {
     var content = document.getElementById('content');
 
-    axios.get('/api/students').then(function (response) {
+    axios.get('http://localhost:3000/api/students').then(function (response) {
         content.innerHTML = renderStudents(response.data);
     });
 

@@ -36,7 +36,7 @@ function renderTweets(tweets) {
 function tweets() {
     var content = document.getElementById('content');
 
-    axios.get('/api/tweets').then(function (response) {
+    axios.get('http://localhost:3000/api/tweets').then(function (response) {
         content.innerHTML = renderTweets(response.data);
     });
 

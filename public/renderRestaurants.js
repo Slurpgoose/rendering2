@@ -21,7 +21,7 @@ function renderRestaurants(restaurants) {
 function restaurants() {
     var content = document.getElementById('content');
 
-    axios.get('/api/restaurants').then(function (response) {
+    axios.get('http://localhost:3000/api/restaurants').then(function (response) {
         content.innerHTML = renderRestaurants(response.data);
     });
 

@@ -8,7 +8,7 @@ function renderRectangle(rectangle) {
 function rectangle() {
     var content = document.getElementById('content');
 
-    axios.get('/api/rectangle').then(function (response) {
+    axios.get('http://localhost:3000/api/rectangle').then(function (response) {
         content.innerHTML = renderRectangle(response.data);
     });
 

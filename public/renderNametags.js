@@ -20,7 +20,7 @@ function renderNametags(nametags) {
 function nametags() {
     var content = document.getElementById('content');
 
-    axios.get('/api/nametags').then(function (response) {
+    axios.get('http://localhost:3000/api/nametags').then(function (response) {
         content.innerHTML = renderNametags(response.data);
     });
     

@@ -18,7 +18,7 @@ function renderCircles(circles) {
 function circles() {
     var content = document.getElementById('content');
 
-    axios.get('/api/circles').then(function (response) {
+    axios.get('http://localhost:3000/api/circles').then(function (response) {
         content.innerHTML = renderCircles(response.data);
     });
 
